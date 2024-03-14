@@ -118,6 +118,7 @@ input:focus {
     padding: 0;
     font-size: 80%;
     color: red;
+    font-size: x-small;
 }
 
 button {

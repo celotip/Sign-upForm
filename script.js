@@ -46,11 +46,9 @@ form.addEventListener("submit", (e) => {
         password.className = "invalid";
         confirmation.className = "invalid";
         error.textContent = "*Passwords do not match";
-        error.className = "error active";
     } else {
         password.className = "valid";
         confirmation.className = "valid";
         error.textContent = "";
-        error.className = "error";
     }
 })
