@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Project</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="img-container">
+        <img src="./turtledark.avif"/>
+        <div class="banner"><span id="logo-container"><img id="odin" src="./odin.png"/></span><span class="banner-text">ODIN</span></div>
+        <p class="copyright">Photo by <a href="https://unsplash.com/@jetlag?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">David Courbit</a> on <a href="https://unsplash.com/photos/brown-turtle-in-water-during-daytime-M8xxVih_V_U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+    </div>
+    <div class="body-container">
+        <div class="bolded">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
+        <div class="bolded">Sign up <em>now</em> to get started.</div>
+        <p class="bolded">You <em>know</em> you want to.</p>
+        <form action="">
+            <h4>Let's do this!</h4>
+            <div class="col-container">
+                <div class="col">
+                    <p>
+                        <label for="firstname">FIRST NAME</label><br>
+                        <input type="text" name="firstname" id="firstname"/>
+                    </p>
+                    <p>
+                        <label for="email">EMAIL</label><br>
+                        <input type="email" name="email"/>
+                    </p>
+                    <p>
+                        <label for="password">password</label><br>
+                        <input type="password" name="password" id="password"/>
+                        <span class="error" aria-live="polite"></span>
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        <label for="lastname">last name</label><br>
+                        <input type="text" name="lastname"/>
+                    </p>
+
+                    <p>
+                        <label for="phone">PHONE NUMBER</label><br>
+                        <input type="tel" name="phone"/>
+                    </p>
+                    
+                    <p>
+                        <label for="confirmation">confirm password</label><br>
+                        <input type="password" name="confirmation" id="confirmation"/>
+                    </p>
+                </div>   
+            </div>     
+            <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="/" id="login">Log in</a></p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
